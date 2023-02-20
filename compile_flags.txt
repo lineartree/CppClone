@@ -1,0 +1,8 @@
+-xc++
+-std=c++17
+-I
+./lib/
+-I
+/usr/include
+-I
+./

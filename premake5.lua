@@ -25,10 +25,11 @@ project "App"
     "./src/gfx/*.cpp",
     "./src/util/*.cpp",
     "./src/world/*.cpp",
-    "./lib/glad/src/glad.c",
+    "./lib/glad/glad.c",
     "./lib/imgui/*.cpp"
   }
 	removefiles {"./lib/imgui/imgui_demo.cpp"}
 
   includedirs {"./lib"}
-  links {"GL", "dl", "glfw", "GLEW", "gomp"}
+  links {"GL", "dl", "glfw", "gomp"}
+  -- links {"GL", "dl", "glfw", "GLEW", "gomp"}

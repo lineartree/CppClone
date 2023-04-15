@@ -20,7 +20,7 @@ Chunk::Chunk(World& world, glm::vec3 chunk_position)
   glGenVertexArrays(1, &vao);
   glBindVertexArray(vao);
   
-	glGenBuffers(1, &vertex_vbo);
+  glGenBuffers(1, &vertex_vbo);
   glGenBuffers(1, &tex_coords_vbo);
   glGenBuffers(1, &shading_values_vbo);
   glGenBuffers(1, &ebo);

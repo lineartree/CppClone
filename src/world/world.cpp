@@ -5,7 +5,8 @@ World::World()
   :texture_manager(16, 16, 256)
 {
   block_types.emplace_back();
-  block_types.emplace_back(BlockType(texture_manager, {{"all", "cobblestone"}}, model.cube)); block_types.emplace_back(BlockType(texture_manager, {{"top","grass"}, {"bottom", "dirt"}, {"sides", "grass_side"}}, model.cube));
+  block_types.emplace_back(BlockType(texture_manager, {{"all", "cobblestone"}}, model.cube));
+  block_types.emplace_back(BlockType(texture_manager, {{"top","grass"}, {"bottom", "dirt"}, {"sides", "grass_side"}}, model.cube));
   block_types.emplace_back(BlockType(texture_manager, {{"all", "grass"}}, model.cube));
   block_types.emplace_back(BlockType(texture_manager, {{"all", "dirt"}}, model.cube));
   block_types.emplace_back(BlockType(texture_manager, {{"all", "stone"}}, model.cube));

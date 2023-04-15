@@ -6,10 +6,9 @@ else
     CONFIG="debug"
 fi
 
+# meson
 rm -rf build
-premake5 gmake
-
-cd build/makefiles || exit
-make config=$CONFIG -j4
-cd ../../
-./build/bin/App/${CONFIG^}/App
+meson setup build --buildtype $CONFIG
+cd build/ || exit
+meson compile
+cd ..

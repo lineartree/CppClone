@@ -55,6 +55,7 @@ Window::Window()
   }
 
   // configure global opengl state
+  // glfwSetWindowAttrib(handle, GLFW_DECORATED, GLFW_TRUE);
   glEnable(GL_DEPTH_TEST);
   glEnable(GL_CULL_FACE);
   // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
